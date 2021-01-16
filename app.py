@@ -26,3 +26,19 @@ AUTH0_BASE_URL = 'https://' + AUTH0_DOMAIN
 app = Flask(__name__)
 # build Oauth class
 OAuth = OAuth(app)
+
+auth0 = oauth.register(
+    'auth0',
+    client_id=AUTH0_CLIENT_ID,
+    client_secret=AUTH0_CLIENT_SECRET,
+    api_base_url=AUTH0_BASE_URL,
+    access_token_url=AUTH0_BASE_URL + '/oauth/token',
+    authorize_url=AUTH0_BASE_URL + '/authorize',
+    client_kwargs={
+        'scope': 'openid profile email',
+    },
+)
+
+@app.route('/')
+def home():
+    return render_template('home.html')
