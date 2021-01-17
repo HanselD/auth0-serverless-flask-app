@@ -1,9 +1,6 @@
-from functools import wraps
 import json
-from os import environ as env
 from werkzeug.exceptions import HTTPException
 from flask_oidc import OpenIDConnect
-from dotenv import load_dotenv, find_dotenv
 from flask import Flask, jsonify, redirect, render_template, url_for
 from six.moves.urllib.parse import urlencode
 
