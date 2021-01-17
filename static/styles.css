@@ -1,0 +1,11 @@
+canvas {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+h1 {
+  padding-top: 20%;
+  text-align: center;
+}
