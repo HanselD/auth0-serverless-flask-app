@@ -24,3 +24,8 @@ def home():
 def login():
     user = {"email": oidc.user_getfield('email')}
     return render_template('loggedin.html', user=user)
+
+@app.route('/logout')
+def logout():
+    oidc.logout()
+    return render_template('home.html')
