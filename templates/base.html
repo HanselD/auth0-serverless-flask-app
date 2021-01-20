@@ -18,7 +18,7 @@
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
             <div class="navbar-header">
-                <span class="navbar-brand mb-0 h1">Serverless Flask web App</span>
+                <a href="/"><span class="navbar-brand mb-0 h1">Serverless Flask Web App</span></a>
             </div>
             {% if user is not defined %}
             <ul class="nav navbar-nav navbar-right">
@@ -26,7 +26,8 @@
             </ul>
             {% else %}
             <ul class="nav navbar-nav navbar-right">
-                {{ user.email }}
+                <li>{{ user.email }}</li>
+                <li><a class="btn btn-primary btn-sm" href="/logout">Log Out</a></li>
             </ul>
             {% endif %}
         </div>
