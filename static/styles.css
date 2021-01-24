@@ -1,3 +1,15 @@
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+
+#container {
+  position: relative;
+  min-height: 100%;
+}
+
 canvas {
   position: absolute;
   top: 100px;
@@ -9,4 +21,11 @@ canvas {
 h1 {
   padding-top: 20%;
   text-align: center;
+}
+
+#footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;  
 }
