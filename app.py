@@ -23,7 +23,7 @@ def home():
 @oidc.require_login
 def login():
     user = {"email": oidc.user_getfield('email')}
-    return render_template('loggedin.html', user=user)
+    return render_template('loggedIn.html', user=user)
 
 @app.route('/logout')
 def logout():
