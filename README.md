@@ -16,4 +16,7 @@ Build the image using `docker build -t auth0-flask-app .`
 Run the image using `docker run -dp 5000:5000 auth0-flask-app`
 
 ## Deploying on AWS
+
+Deploy the app using the [Serverless Framework](https://www.serverless.com/framework/docs/providers/aws/guide/intro/)
+
 TBD
