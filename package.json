@@ -1,0 +1,24 @@
+{
+  "name": "auth0-flask-app",
+  "version": "1.0.0",
+  "description": "This is a Serverless Flask web application with Auth0 authentication.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "serverless-python-requirements": "^5.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HanselD/auth0-serverless-flask-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HanselD/auth0-serverless-flask-app/issues"
+  },
+  "homepage": "https://github.com/HanselD/auth0-serverless-flask-app#readme"
+}
