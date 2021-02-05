@@ -1,0 +1,10 @@
+service: auth0-serverless-flask-app
+
+plugins:
+  - serverless-python-requirements
+
+provider:
+  name: aws
+  runtime: python3.7
+  stage: dev
+  region: us-east-1
