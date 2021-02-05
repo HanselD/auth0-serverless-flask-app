@@ -2,6 +2,14 @@ service: auth0-serverless-flask-app
 
 plugins:
   - serverless-python-requirements
+  - serverless-wsgi
+
+custom:
+  wsgi:
+    app: app.app
+    packRequirements: false
+  pythonRequirements:
+    dockerizePip: false
 
 provider:
   name: aws
